@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Find the Best Food Near You</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.search-section {
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.featured-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.food-item {
+    text-align: center;
+    margin: 15px;
+}
+
+.food-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #343a40;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <center><h1>Find the Best Food Near You</h1></center>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <center><h2 style="background-color: red;">Search for Food Items</h2></center><br>
+            <form id="search-form">
+                <input type="text" id="location" placeholder="Enter your location" required>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section class="featured-items">
+            <center><h2 style="background-color: rgb(231, 168, 92);">Featured Food Items</h2></center>
+            <div class="food-item">
+                <img src="pizza.jpg" alt="Pizza">
+                <h3>Pizza from Joe's Pizzeria</h3>
+            </div>
+            <div class="food-item">
+                <img src="sushi.webp" alt="Sushi">
+                <h3>Sushi at Sushi World</h3>
+            </div>
+            <div class="food-item">
+                <img src="burger.webp" alt="Burger">
+                <h3>Burgers from Burger Heaven</h3>
+            </div>
+            <div class="food-item">
+                <img src="vegan wrap.webp" alt="Vegan Wrap">
+                <h3>Vegan Wraps at Green Eats</h3>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Find the Best Food. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
